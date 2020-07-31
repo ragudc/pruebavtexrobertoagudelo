@@ -1,0 +1,212 @@
+/*barrita-header*/
+
+.bar-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #5B2A18;
+    background-color: #CFC5B5;
+    min-height: 50px;
+    letter-spacing: 5px;
+}
+
+.bar-top .text-inverse strong {
+    background: #5B2A18;
+    padding: 7px 5px 5px 10px;
+    color: #FFF;
+    letter-spacing: 4px !important;
+    margin-right: 8px;
+}
+
+.bar-top .font-italic {
+    padding: 0 0 0 10px;
+    color: #5b2a18a6;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.bar-top .font-italic i {
+    font-size: .7em;
+}
+
+.anime-tag {
+    -webkit-animation: anime-tag 1s infinite;
+}
+
+@-webkit-keyframes anime-tag {
+    0% {
+        -webkit-transform: rotateZ(100deg);
+    }
+    50% {
+        -webkit-transform: rotateZ( 90deg) scale(.9);
+    }
+    100% {
+        -webkit-transform: rotateZ( 100deg);
+    }
+}
+
+
+/*-------------------------*/
+
+
+/*-----------------general css-------------*/
+
+.bs-header .main-item>a,
+.bs-header .logo-velez {
+    color: #fff;
+}
+
+.bs-header .main-navigation:hover {
+    background: #ecebeb;
+}
+
+.bs-header .main-navigation::hover>.bs-header .main-item a,
+.bs-header .logo-velez {
+    color: #333 !important;
+}
+
+.bs-header {
+    margin-top: 50px;
+}
+
+.half-banner .banner-info {
+    width: calc(100% - 40px);
+    padding: 45px 65px;
+}
+
+.half-banner .banner-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bs-secondary-banners .half-banner,
+.form-banners .half-banner {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.accesorios-banner {
+    padding: 20px;
+}
+
+.home picture img {
+    width: 100% !important;
+}
+
+
+/*------------Buttons-------------*/
+
+.bs-btn {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px;
+}
+
+.bs-btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.bs-btn {
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 35px;
+    letter-spacing: 1px;
+    display: inline-block;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/*------------Form-------------*/
+
+.container-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container-form span {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.container-form h2.title-general {
+    font-weight: 500;
+    margin: 30px 0;
+    line-height: 1.4;
+}
+
+#contactForm #commit {
+    background: gray;
+    color: #fff;
+    padding: 15px 6px;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    margin: 40px 0;
+    transition: .2s all linear;
+    -webkit-transition: .2s all linear;
+}
+
+#contactForm {
+    padding: 50px 0;
+}
+
+#contactForm input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-banners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/*------------Clases responsive-------------*/
+
+@media screen and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+
+/* Columnas celular */
+
+.col-6 {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    /* Columnas pc */
+    .col-6 {
+        width: 50%;
+    }
+}

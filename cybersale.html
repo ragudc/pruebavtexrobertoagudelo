@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="es-CO">
+
+<head>
+
+    <vtex:metaTags/>
+    <link href="/arquivos/slick-theme.css?v=1" rel="stylesheet" />
+    <link href="/arquivos/otros-home.css" rel="stylesheet" />
+    <vtex:template id="19-commonStylesDesktop" />
+    <link href="/arquivos/ids/170630/pruebarobertoagudelo.css" rel="stylesheet" />
+
+
+    <link href="/arquivos/ids/170631/vl-global-modules.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/8146ea1bb9.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="/arquivos/ids/170639/myscript.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var storeName = "qacuerosvelez"; //Indica o nome da conta utilizada na API do MasterData
+            var dataEntity = "CO"; //Indica a sigla da entidade de dados utilizada na API do MasterData
+            var htmlElementId = "contactForm"; //Indica o ID do elemento HTML que receberá o formulário
+            var messageLoading = "Cargando..."; //Mensagem de carregamento do formulário (ao salvar)
+            var messageValidation = "Todos los campos deben estár completados"; //Mensagem de validação de formulário
+            var messageSuccess = "Registro Exitoso"; //Mensagem de sucesso
+            var messageError = "Error en el registro, por favor intenta luego."; //Mensagem de erro
+
+            FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messageValidation, messageSuccess, messageError);
+        });
+    </script>
+
+</head>
+
+<body id="home-page">
+
+    <vtex:contentPlaceHolder id="barrita-header" />
+    <vtex:template id="cybersaleheader" />
+
+    <section class="mainContent">
+        <div class="bnnerPrincipal section1">
+            <vtex:contentPlaceHolder id="banner-principal" />
+        </div>
+
+        <div class="bs-secondary-banners">
+            <div class="half-banner col-6">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="/arquivos/categoriamujer.png" width="100%" />
+                    <img src="/arquivos/categoriamujer.png" alt="Descubre lo mejor para dama" width="100%" />
+                </picture>
+                <div class="banner-info">
+                    <h3></h3><a class="bs-btn bs-btn-outline" href="/mujer?O=OrderByReleaseDateDESC"> Comprar </a>
+                </div>
+            </div>
+            <div class="half-banner col-6">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="/arquivos/categoriahombre3.png" width="100%" />
+                    <img src="/arquivos/categoriahombre4.png" width="100%" alt="Descubre los mejores artículos para hombre" />
+                </picture>
+                <div class="banner-info">
+                    <h3></h3>
+                    <!--a class="bs-btn bs-btn-outline" href="/personalizacion/porta-tarjetas">Personalización</a     style="margin-left: 20px;"   -->
+                    <a class="bs-btn bs-btn-outline" href="/hombre?O=OrderByReleaseDateDESC">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accesorios-banner">
+            <vtex:contentPlaceHolder id="banneraccesorios" />
+            <!--<picture>
+                <source media="(max-width: 768px)" srcset="/arquivos/accesorios.png" width="100%" />
+                <a href="/hombre/accesorios?O=OrderByReleaseDateDESC"><img src="/arquivos/accesorios.png" width="900px" height="388px" alt="Accesorios de cuero" /></a>
+            </picture>-->
+        </div>
+
+        <!-- Chaordic TOP -->
+        <div chaordic="top"></div>
+        <!-- Chaordic MIDDLE -->
+        <div chaordic="middle"></div>
+        <!-- Chaordic BOTTOM -->
+        <div chaordic="bottom"></div>
+
+
+        <div class="form-banners">
+            <div class="half-banner col-6 hide-mobile">
+                <picture>
+                    <source media="(max-width: 479px)" srcset="/arquivos/accesorios.png" width="100%" />
+                    <a href="/hombre/accesorios?O=OrderByReleaseDateDESC"><img src="/arquivos/accesorios.png" alt="Descubre lo mejor en cuero para dama" width="100%" /></a>
+                </picture>
+            </div>
+
+            <div class="half-banner col-6">
+                <div class="container-form">
+                    <h2 class="title-general">¡APROVECHA NUESTRAS PROMOCIONES!</h2>
+                    <span>Regístrate y no te pierdas ningún descuento en www.velez.com.co</span>
+                    <div id="contactForm"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <vtex:template id="18-footerVelez" />
+    </footer>
+
+    <script src="/arquivos/slick.js"></script>
+    <vtex:template id="19-commonScriptsDesktop" />
+    <script src="/arquivos/homeVelez.js"></script>
+    <script src="/files/activar-slick.js"></script>
+
+</body>
+
+</html>
